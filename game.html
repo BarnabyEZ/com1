@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Mario - โลกแห่งการผจญภัย</title>
+  <!-- เชื่อมต่อ Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqCkC5L7wI5s5e/ibTfo5ja1a5vgsdU5K0E3w6iyx+Jl2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    /* ปรับแต่งภาพพื้นหลังของ Hero section */
+    .hero-section {
+      background: url('https://via.placeholder.com/1500x700?text=Super+Mario') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+      border-bottom: 5px solid #f7c01c;
+    }
+
+    /* ปรับสไตล์ให้กับปุ่ม */
+    .btn-primary {
+      background-color: #f7c01c;
+      border-color: #f7c01c;
+      font-weight: bold;
+    }
+    .btn-primary:hover {
+      background-color: #e6b700;
+      border-color: #e6b700;
+    }
+
+    /* ฟอนต์ให้สวยงาม */
+    h1, h2, h4 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* ฟีเจอร์ Section */
+    .feature-icon {
+      font-size: 3rem;
+      color: #ff6347;
+      margin-bottom: 20px;
+    }
+
+    .feature-section {
+      background-color: #f0f0f0;
+      padding: 60px 0;
+    }
+
+    /* ปรับแต่งส่วนของการ์ดให้ดูทันสมัย */
+    .feature-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* ปรับ footer ให้ดูเรียบหรู */
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-text {
+      font-size: 0.9rem;
+    }
+
+    /* ปรับแต่งการ์ดสวยๆ */
+    .card-body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ส่วน Header -->
+  <header class="hero-section">
+    <div class="container">
+      <h1 class="display-4 font-weight-bold">Super Mario</h1>
+      <p class="lead">ผจญภัยในโลกของ Mario พร้อมการท้าทายใหม่ๆ ที่ไม่มีที่สิ้นสุด!</p>
+      <a href="#about" class="btn btn-primary btn-lg">เรียนรู้เพิ่มเติม</a>
+    </div>
+  </header>
+
+  <!-- ส่วนเกี่ยวกับเกม -->
+  <section id="about" class="container py-5">
+    <h2 class="text-center mb-4">เกี่ยวกับเกม Super Mario</h2>
+    <p class="lead text-center">Super Mario เป็นเกมผจญภัยระดับตำนานที่มีการต่อสู้และการแก้ปริศนาต่างๆ พร้อมกับการเก็บเหรียญที่เป็นเอกลักษณ์ Mario พร้อมที่จะนำคุณไปสู่การผจญภัยในโลกใหม่ๆ ที่ไม่มีที่สิ้นสุด!</p>
+  </section>
+
+  <!-- ส่วนฟีเจอร์ -->
+  <section class="feature-section">
+    <div class="container">
+      <h2 class="text-center mb-4">ฟีเจอร์ของเกม</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card feature-card shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon">
+                <i class="fas fa-running"></i>
+              </div>
+              <h4>การวิ่งและกระโดด</h4>
+              <p>ผจญภัยไปกับ Mario ด้วยการวิ่งและกระโดดผ่านด่านที่ท้าทาย</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card feature-card shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>เก็บเหรียญและดาว</h4>
+              <p>เก็บเหรียญและดาวที่ซ่อนอยู่ในด่านต่างๆ เพื่อเพิ่มคะแนนและเปิดด่านใหม่</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card feature-card shadow-sm">
+            <div class="card-body">
+              <div class="feature-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h4>ปรับแต่งการเล่น</h4>
+              <p>สามารถปรับแต่งตัวละครและพลังพิเศษในการผจญภัย</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ส่วน Footer -->
+  <footer>
+    <div class="container">
+      <p class="footer-text">&copy; 2024 Super Mario. ทุกสิทธิ์สงวน.</p>
+    </div>
+  </footer>
+
+  <!-- เชื่อมต่อ jQuery และ Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyHg2ffLx4u8alC5KvnFhKxVmZ8zJ2H3QhT3yVStZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqCkC5L7wI5s5e/ibTfo5ja1a5vgsdU5K0E3w6iyx+Jl2" crossorigin="anonymous"></script>
+</body>
+</html>
